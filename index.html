@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Decodificador</title>
+</head>
+
+<body>
+    <main>
+        <h1>Decodificador</h1>
+        <h3>Base64 | Cifra de césar</h3>
+        <form action="#">
+
+            <input type="text" name="mensagem" id="mensagem" value="" placeholder="Digite sua mensagem..."
+                autocomplete="off">
+
+            <label for="select">Selecione</label>
+            <select name="select" id="select">
+                <option value="Base64">Base64</option>
+                <option value="Cifra">Cifra de césar</option>
+            </select>
+
+            <input type="radio" name="codificar" id="codificar" value="codificar">
+            <label for="codificar">Codificar</label>
+
+            <input type="radio" name="codificar" id="decodificar" value="decodificar">
+            <label for="decodificar">Decodificar</label>
+
+            <button id="btn">Codificar</button>
+
+            <textarea name="" id="resultado" cols="30" rows="10"></textarea>
+
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
