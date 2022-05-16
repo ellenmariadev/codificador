@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alike+Angular&family=Inconsolata:wght@400;600&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 
     <title>Decodificador</title>
@@ -13,30 +18,38 @@
 
 <body>
     <main>
-        <h1>Decodificador</h1>
-        <h3>Base64 | Cifra de césar</h3>
-        <form action="#">
+        <div class="container">
+            <h1><span>.</span>decodificador<span>_</span></h1>
+            <h3>.base64 .cifra_de_césar</h3>
+            <form action="#">
 
-            <input type="text" name="mensagem" id="mensagem" value="" placeholder="Digite sua mensagem..."
-                autocomplete="off">
+                <textarea name="" id="mensagem" cols="50" rows="4" placeholder="Digite sua mensagem..."></textarea>
 
-            <label for="select">Selecione</label>
-            <select name="select" id="select">
-                <option value="Base64">Base64</option>
-                <option value="Cifra">Cifra de césar</option>
-            </select>
+                <label id="selecione" for="select"></label>
+                <select name="select" id="select">
+                    <option value="Base64">Selecione</option>
+                    <option value="Base64">Base64</option>
+                    <option value="Cifra">Cifra de césar</option>
+                </select>
 
-            <input type="radio" name="codificar" id="codificar" value="codificar">
-            <label for="codificar">Codificar</label>
+                <div class="radio-button">
+                    <div class="radio">
+                        <input type="radio" name="codificar" id="codificar" value="codificar">
+                        <label for="codificar">.codificar</label>
+                    </div>
 
-            <input type="radio" name="codificar" id="decodificar" value="decodificar">
-            <label for="decodificar">Decodificar</label>
+                    <div class="radio">
+                        <input type="radio" name="codificar" id="decodificar" value="decodificar">
+                        <label for="decodificar">.decodificar</label>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button>Codificar Mensagem!</button>
+                </div>
 
-            <button id="btn">Codificar</button>
-
-            <textarea name="" id="resultado" cols="30" rows="10"></textarea>
-
-        </form>
+                <textarea name="" class="mensagem" cols="50" rows="4" placeholder="Mensagem Criptografada"></textarea>
+            </form>
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
