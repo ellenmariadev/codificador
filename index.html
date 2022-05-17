@@ -25,26 +25,27 @@
             <h3>.base64 .cifra_de_césar</h3>
             <form action="#">
 
-                <textarea name="" id="mensagem" cols="50" rows="4" placeholder="Digite sua mensagem..."></textarea>
+                <textarea name="mensagem" id="mensagem" cols="50" rows="4"
+                    placeholder="Digite sua mensagem..."></textarea>
 
                 <label id="selecione" for="select"></label>
-                <select name="select" id="select">
+                <select name="select" class="select" id="select">
                     <option value="selecione" disabled selected> Selecione </option>
-                    <option value="Base64">Base64</option>
-                    <option value="Cifra">Cifra de césar</option>
+                    <option value="base64">Base64</option>
+                    <option value="cifra">Cifra de césar</option>
                 </select>
                 <div class="chave-container">
                     <label class="chave" for="range">Escolha a Chave</label>
                     <div class="slider-range">
-                        <input type="range" value="1" min="1" class="range" id="range"
+                        <input type="range" value="1" min="1" max="25" class="range" id="range"
                             oninput="rangenumber.value=value">
-                        <input type="number" value="1" id="rangenumber" min="1" oninput="range.value=value">
+                        <input type="number" value="1" id="rangenumber" min="1" max="25" oninput="range.value=value">
                     </div>
                 </div>
 
                 <div class="radio-button">
                     <div class="radio">
-                        <input type="radio" name="codificar" id="codificar" value="codificar">
+                        <input type="radio" name="codificar" id="codificar" value="codificar" checked>
                         <label for="codificar">.codificar</label>
                     </div>
 
@@ -54,8 +55,7 @@
                     </div>
                 </div>
 
-
-                <textarea name="" class="mensagem" cols="50" rows="4" readonly
+                <textarea id="resultado" class="mensagem resultado" cols="50" rows="4" readonly
                     placeholder="Mensagem Criptografada"></textarea>
                 <div class="btn">
                     <button>Codificar Mensagem!</button>
