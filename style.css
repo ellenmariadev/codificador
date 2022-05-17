@@ -92,10 +92,14 @@ select:focus {
   display: flex;
   gap: 5px;
   color: #19c9a3;
+  place-items: center;
 }
 
 input[type="radio"] {
   outline: none;
+  accent-color: #19c9a3;
+  width: 20px;
+  height: 20px;
 }
 
 input[type="radio"]:focus {
@@ -108,6 +112,7 @@ input[type="radio"]:focus {
   gap: 20px;
   margin-bottom: 20px;
   justify-content: center;
+  padding: 20px;
 }
 
 .btn {
@@ -121,7 +126,7 @@ button {
   border: none;
   padding: 8px;
   border-radius: 5px;
-  color: #7fc0b2;
+  color: #19c9a3;
   margin-bottom: 20px;
   font-family: "Inconsolata", monospace;
   width: 100%;
@@ -151,4 +156,59 @@ form {
   border-radius: 4px;
   outline: none;
   margin-bottom: 20px;
+}
+
+.slider-range {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  width: 30px;
+  background-color: rgba(138, 138, 138, 0.2);
+  text-align: center;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px #818181;
+  color: #ffffff;
+  outline: none;
+  font-family: "Inconsolata", monospace;
+}
+
+.chave {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #afafaf;
+  font-size: 0.875rem;
+}
+
+.chave-container {
+  /* background: rgba(0, 0, 0, 0.13);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+}
+
+.range {
+  -webkit-appearance: none;
+  height: 10px;
+  background-color: rgb(29, 29, 29);
+  outline: none;
+  cursor: ew-resize;
+  border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 12px;
+  width: 10px;
+  background-color: #19c9a3;
+  border-radius: 2px;
 }

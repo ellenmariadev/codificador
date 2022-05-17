@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Alike+Angular&family=Inconsolata:wght@400;600&display=swap"
         rel="stylesheet">
 
+    <link rel="shortcut icon" href="./assets/lock.svg" type="image/x-icon">
+
     <link rel="stylesheet" href="style.css">
 
     <title>Decodificador</title>
@@ -27,10 +29,18 @@
 
                 <label id="selecione" for="select"></label>
                 <select name="select" id="select">
-                    <option value="Base64">Selecione</option>
+                    <option value="selecione" disabled selected> Selecione </option>
                     <option value="Base64">Base64</option>
                     <option value="Cifra">Cifra de césar</option>
                 </select>
+                <div class="chave-container">
+                    <label class="chave" for="range">Escolha a Chave</label>
+                    <div class="slider-range">
+                        <input type="range" value="1" min="1" class="range" id="range"
+                            oninput="rangenumber.value=value">
+                        <input type="number" value="1" id="rangenumber" min="1" oninput="range.value=value">
+                    </div>
+                </div>
 
                 <div class="radio-button">
                     <div class="radio">
@@ -43,11 +53,13 @@
                         <label for="decodificar">.decodificar</label>
                     </div>
                 </div>
+
+
+                <textarea name="" class="mensagem" cols="50" rows="4" readonly
+                    placeholder="Mensagem Criptografada"></textarea>
                 <div class="btn">
                     <button>Codificar Mensagem!</button>
                 </div>
-
-                <textarea name="" class="mensagem" cols="50" rows="4" placeholder="Mensagem Criptografada"></textarea>
             </form>
         </div>
     </main>
