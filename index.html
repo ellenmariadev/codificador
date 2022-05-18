@@ -2,18 +2,18 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Alike+Angular&family=Inconsolata:wght@400;600&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
 
-    <link rel="shortcut icon" href="./assets/lock.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/lock.svg" type="image/x-icon" />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <title>Decodificador</title>
 </head>
@@ -24,33 +24,32 @@
             <h1><span>.</span>decodificador<span>_</span></h1>
             <h3>.base64 .cifra_de_césar</h3>
             <form action="#">
-
                 <textarea name="mensagem" id="mensagem" cols="50" rows="4"
                     placeholder="Digite sua mensagem..."></textarea>
 
                 <label id="selecione" for="select"></label>
                 <select name="select" class="select" id="select">
-                    <option value="selecione" disabled selected> Selecione </option>
+                    <option value="selecione" disabled selected>Selecione</option>
                     <option value="base64">Base64</option>
                     <option value="cifra">Cifra de césar</option>
                 </select>
                 <div class="chave-container">
                     <label class="chave" for="range">Escolha a Chave</label>
                     <div class="slider-range">
-                        <input type="range" value="1" min="1" max="25" class="range" id="range"
-                            oninput="rangenumber.value=value">
-                        <input type="number" value="1" id="rangenumber" min="1" max="25" oninput="range.value=value">
+                        <input type="range" value="1" min="1" max="26" class="range" id="range"
+                            oninput="rangenumber.value=value" />
+                        <input type="number" value="1" id="rangenumber" min="1" max="26" oninput="range.value=value" />
                     </div>
                 </div>
 
                 <div class="radio-button">
                     <div class="radio">
-                        <input type="radio" name="codificar" id="codificar" value="codificar" checked>
+                        <input type="radio" name="codificar" id="codificar" value="codificar" checked />
                         <label for="codificar">.codificar</label>
                     </div>
 
                     <div class="radio">
-                        <input type="radio" name="codificar" id="decodificar" value="decodificar">
+                        <input type="radio" name="codificar" id="decodificar" value="decodificar" />
                         <label for="decodificar">.decodificar</label>
                     </div>
                 </div>
