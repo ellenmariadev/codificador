@@ -1,7 +1,7 @@
 # Codificador/Decodificador 
 🔒 Criptografia de texto com Base64 e Cifra de César utilizando JavaScript. 🔒
 
-![image](https://user-images.githubusercontent.com/99571291/169351377-48671c2d-5742-4b7b-800e-0cb1965be3ac.png)
+![image](https://user-images.githubusercontent.com/99571291/169351676-6d812609-724c-4919-b58b-49dbefd58232.png)
 
 
 ## Checklist
