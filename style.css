@@ -44,6 +44,11 @@ h3 {
   color: #19c9a3;
 }
 
+::selection {
+  background: #19c9a3;
+  color: #000;
+}
+
 #mensagem {
   background: rgba(215, 212, 208, 0.3);
   box-shadow: 0px 4px 13px rgba(0, 0, 0, 0.5);
@@ -132,16 +137,14 @@ button {
   width: 100%;
   cursor: pointer;
   transition: 0.3s;
-  outline: none;
+}
+
+button:focus {
+  outline: solid 1px #19c9a3;
 }
 
 button:hover {
   background-color: #000;
-}
-
-button:focus {
-  background: linear-gradient(145deg, #5a5a5a, #4c4c4c);
-  box-shadow: 10px 10px 70px #505050, -10px -10px 70px #585858;
 }
 
 form {
@@ -210,4 +213,14 @@ input[type="range"]::-webkit-slider-thumb {
   width: 10px;
   background-color: #19c9a3;
   border-radius: 2px;
+}
+
+.social {
+  display: flex;
+  place-content: center;
+  gap: 20px;
+}
+
+svg:hover path {
+  fill: #19c9a3;
 }
